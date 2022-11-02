@@ -4,10 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="sylesheet" href="style.css">
+    <title>Bogdanov Sergei CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="left">        
+            <img src="/rsschool-cv2022/img/photo.JPG" alt="photo" class="photo">
+        </div> 
+        <div class="right"> 
+            <h1>Bogdanov Sergei</h1> 
+            <h2>Front-end developer (Beginner)</h2>      
+            <nav>
+            <ul>
+                <li><a href="#contacts">Contact information</a></li>
+                <li><a href="#about">About myself</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education ">Education </a></li>
+                <li><a href="#code-example">Code example</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#languages ">Languages </a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    </header>
+<main>
+
+    <section id="contacts">
+        <div>
+            Contact information
+        </div> 
+        <div>
+            E-mail: BogdanovSA91@gmail.com
+            Telegram: @InspectorMRSK
+        </div>   
+    </section>
+
+    <section id="about">
+        <div>
+            About myself
+        </div>
+        <div>
+            I work as an design engineer and study the fron-end.
+        </div>    
+    </section>
+
+    <section id="skills"> 
+        <div>Skills</div>
+        <div>
+            <ul>
+                <li>CSS3</li>
+                <li>HTML5</li>
+                <li>Markdown</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>JavaScript in progress...</li>
+            </ul>
+        </div>   
+    </section>
+
+    <section id="education"> 
+        <div>
+            Education 
+        </div>   
+        <div>
+            <ul>
+                <li>Omsk Technical University, Electrical Engineer</li>
+                <li>Omsk Technical University, Master in Electrical Power Engineering and Electrical Engineerin</li>
+                <li>
+                   <ul>Courses
+                    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress) </li>
+                   </ul> 
+                </li>
+            </ul>
+            </ul>
+        </div> 
+    </section>
+
+    <section id="code-example"> 
+        <div>Code example</div>
+        <div><pre><code>   
+            //Адаптивное меню
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.querySelector('.menu');
+            
+            function toggleMenu() {
+              hamburger.classList.toggle('open');
+              menu.classList.toggle('open');
+            }
+            hamburger.addEventListener('click', toggleMenu);
+            
+            function closeMenu(event) {
+              if (event.target.classList.contains('nav-link')) {
+                menu.classList.remove('open');
+                hamburger.classList.remove('open');
+              }
+            }
+            
+            menu.addEventListener('click', closeMenu);
+        </code></pre></div>   
+    </section>
+
+    <section id="projects">    
+        <div>Projects </div>
+        <div>
+            <a href="https://rolling-scopes-school.github.io/inspector91-JSFEPRESCHOOL/portfolio/">Portfolio Task</a>
+        </div>
+    </section>
+
+    <section id="languages">  
+        <div>Languages </div>
+        <div>
+            <ul>
+                <li>English - *Intermediant* (according to the online test at [www.efset.org](www.efset.org))</li>
+                <li>Russian - *Native*</li>
+            </ul>
+        </div>  
+    </section>
+
+</main>
+
+<footer>
+    <a href="https://rs.school/js/">
+        <img src="/rsschool-cv2022/icons/rs_school_js.svg" alt="rs_school_js" width="100">
+    </a>
+    <a href="https://github.com/Inspector91/">
+        <img src="/rsschool-cv2022/icons/github.svg" alt="github" height="50">
+    </a>
+</footer>
+
 </body>
 </html>
