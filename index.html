@@ -13,53 +13,53 @@
 <body>
     
     <ul class="nav">
+        <li><a href="#contacts" class="link">Contact information</a></li>
         <li><a href="#about" class="link">About myself</a></li>
         <li><a href="#skills" class="link">Skills</a></li>
         <li><a href="#education " class="link">Education </a></li>
         <li><a href="#code-example" class="link">Code example</a></li>
         <li><a href="#projects" class="link">Projects</a></li>
         <li><a href="#languages" class="link">Languages </a></li>
-        <li><a href="#contacts" class="link">Contact information</a></li>
     </ul>
 
     <header>
-        <div class="left">        
+        <div class="left-header">        
             <img src="/rsschool-cv2022/img/photo.JPG" alt="photo" class="photo">
         </div> 
-        <div class="right"> 
-            <h1>Bogdanov Sergei</h1> 
+        <div class="right-header"> 
+            <h1><span class="text-decor">Bogdanov</span> Sergei</h1> 
             <h2>Front-end developer (Beginner)</h2>      
-
         </div>
-
-
-
     </header>
 <main>
 
-    <section id="contacts">
-        <div>
-            Contact information
+    <section id="contacts" class="section">
+        <div class="main-left">
+            <h2>Contact information</h2>
         </div> 
-        <div>
-            E-mail: BogdanovSA91@gmail.com
-            Telegram: @InspectorMRSK
+        <div class="main-right">
+            <h3>E-mail:</h3> 
+            <a href="mailto:BogdanovSA91@gmail.com" class="link">BogdanovSA91@gmail.com</a>
+            <h3>Telegram:</h3>
+            <a href="https://t.me/InspectorMRSK" class="link">@InspectorMRSK</a>
         </div>   
     </section>
 
-    <section id="about">
-        <div>
-            About myself
+    <section id="about" class="section">
+        <div class="main-left">
+            <h2>About myself</h2>
         </div>
-        <div>
+        <div class="main-right">
             I work as an design engineer and study the fron-end.
         </div>    
     </section>
 
-    <section id="skills"> 
-        <div>Skills</div>
-        <div>
-            <ul>
+    <section id="skills" class="section"> 
+        <div class="main-left">
+            <h2>Skills</h2>
+        </div>
+        <div class="main-right">
+            <ul class="list">
                 <li>CSS3</li>
                 <li>HTML5</li>
                 <li>Markdown</li>
@@ -70,16 +70,17 @@
         </div>   
     </section>
 
-    <section id="education"> 
-        <div>
-            Education 
+    <section id="education" class="section"> 
+        <div class="main-left">
+            <h2>Education</h2> 
         </div>   
-        <div>
-            <ul>
+        <div class="main-right">
+            <ul class="list">
                 <li>Omsk Technical University, Electrical Engineer</li>
                 <li>Omsk Technical University, Master in Electrical Power Engineering and Electrical Engineerin</li>
                 <li>
-                   <ul>Courses
+                   <ul class="list">
+                    <h3>Courses:</h3>
                     <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress) </li>
                    </ul> 
                 </li>
@@ -88,41 +89,46 @@
         </div> 
     </section>
 
-    <section id="code-example"> 
-        <div>Code example</div>
-        <div><pre><code>   
-            //Адаптивное меню
-            const hamburger = document.querySelector('.hamburger');
-            const menu = document.querySelector('.menu');
+    <section id="code-example" class="section"> 
+        <div class="main-left">
+            <h2>Code example</h2>
+        </div>
+        <div class="main-right"><pre><code>//Адаптивное меню
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
             
-            function toggleMenu() {
-              hamburger.classList.toggle('open');
-              menu.classList.toggle('open');
-            }
-            hamburger.addEventListener('click', toggleMenu);
+function toggleMenu() {
+    hamburger.classList.toggle('open');
+    menu.classList.toggle('open');
+}
+hamburger.addEventListener('click', toggleMenu);
             
-            function closeMenu(event) {
-              if (event.target.classList.contains('nav-link')) {
-                menu.classList.remove('open');
-                hamburger.classList.remove('open');
-              }
-            }
-            
-            menu.addEventListener('click', closeMenu);
-        </code></pre></div>   
+function closeMenu(event) {
+    if (event.target.classList.contains('nav-link')) {
+    menu.classList.remove('open');
+    hamburger.classList.remove('open');
+    }
+}
+        
+menu.addEventListener('click', closeMenu);
+</code></pre></div>   
     </section>
 
-    <section id="projects">    
-        <div>Projects </div>
-        <div>
-            <a href="https://rolling-scopes-school.github.io/inspector91-JSFEPRESCHOOL/portfolio/">Portfolio Task</a>
+    <section id="projects" class="section">    
+        <div class="main-left">
+            <h2>Projects</h2>
+        </div>
+        <div class="main-right">
+            <a href="https://rolling-scopes-school.github.io/inspector91-JSFEPRESCHOOL/portfolio/" class="link">Portfolio Task</a>
         </div>
     </section>
 
-    <section id="languages">  
-        <div>Languages </div>
-        <div>
-            <ul>
+    <section id="languages" class="section">  
+        <div class="main-left">
+            <h2>Languages</h2>
+        </div>
+        <div class="main-right">
+            <ul class="list">
                 <li>English - *Intermediant* (according to the online test at [www.efset.org](www.efset.org))</li>
                 <li>Russian - *Native*</li>
             </ul>
@@ -133,7 +139,7 @@
 
 <footer>
     <a href="https://rs.school/js/">
-        <img src="/rsschool-cv2022/icons/rs_school_js.svg" alt="rs_school_js" width="100">
+        <img src="/rsschool-cv2022/icons/rs_school_js.svg" alt="rs_school_js" width="100" class="footer-link">
     </a>
     <a href="https://github.com/Inspector91/">
         <img src="/rsschool-cv2022/icons/github.svg" alt="github" height="50">
